@@ -32,18 +32,18 @@ body {
 .img-flex {
   display: block;
   width: 100%;
-  margin-top: 2em;
+  padding-top: 2rem;
 }
 
 section {
   max-width: 50em;
-}
-
-div {
   padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 a {
+  display: inline-block; /* to make it look like a button & properly apply padding */
   background-color: #555;
   color: #fff;
   padding: .5em .75em;
@@ -73,7 +73,12 @@ a:hover {
   }
 
   section {
-    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  div {
+    max-width: 50%;
+    padding-right: 1rem;
   }
 
 }
@@ -95,6 +100,10 @@ a:hover {
 
   html {
     font-size: 130%;
+  }
+
+  section {
+    margin: 0 auto;
   }
 
 }
